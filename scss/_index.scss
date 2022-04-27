@@ -1,0 +1,25 @@
+.cuerpo{
+	padding: 1rem 1rem;
+    section{
+        padding: 1rem 0;
+    }
+    img{
+        width: 100%;
+        padding: 1rem 1rem;
+    }
+}
+
+.cajas{
+    border: solid 0.1rem;
+	background-color: white;
+	text-align: justify;
+    p{
+        padding: 1rem; 
+    }
+}
+
+h2 {
+    @extend .tituloH1;
+    font-family: $fontMain;
+    font-size: $textCuerpo;
+}

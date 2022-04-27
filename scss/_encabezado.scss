@@ -1,0 +1,49 @@
+.encabezado{
+    nav{
+        background-color: map-get($map:$paleta,$key:'uno');
+        font-size: $textHeader;
+		padding: 5px;
+        @include alineado(center, space-between);
+        a{
+            width: 40%;
+            text-decoration: none;
+            img{
+                width: 100%;
+            }
+            @media only screen	and (min-width: 768px){
+                width: 50%;
+                img{
+                    width: 50%;
+                }
+            }
+            @media only screen	and (min-width: 992px){
+                width: 70%;
+                img{
+                    width: 50%;
+                }
+            }
+        }
+        ul{
+            li{
+                list-style: none;
+                a{
+                    &:hover{
+                        color: black;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tituloH1{
+    background:radial-gradient(circle, map-get($map:$paleta,$key:'dos'), map-get($map:$paleta,$key:'uno'));
+    font-family: $fontTitle;
+    font-size: $textTitulopeque;
+    text-align: center;
+    margin: 0rem 0rem 0.5rem 0rem;
+    @media only screen	and (min-width: 768px){
+        font-size: $textTitulo; 
+    }
+}

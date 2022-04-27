@@ -1,0 +1,30 @@
+.decoraFigures{
+	@include centrado(auto, auto);
+	max-width: 80%;
+	figure{
+		background-color: white;
+		border: ridge;
+		border-radius: 1rem;
+		margin: 0.2rem;
+		padding: 1rem;
+		figcaption{
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+		img{
+			padding: 0rem;
+		}
+		&:hover{
+			@include transicion(map-get($map:$paleta,$key:'efecto'), inherit, 0.5s);
+			figcaption{
+				color: white;
+			}
+		}
+	}
+	@media only screen	and (min-width: 768px){
+		max-width: 85%;
+	}
+	@media only screen	and (min-width: 992px){
+		max-width: 100%;
+	}
+}

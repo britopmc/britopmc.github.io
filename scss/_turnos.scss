@@ -1,0 +1,18 @@
+iframe{
+	margin: 0;
+}
+
+.divTurnos{
+	text-align: center;
+	font-size: 1rem;
+}
+
+.whats{
+	max-width: 70%;
+	@media only screen	and (min-width: 768px){
+		max-width: 60%;
+	}
+	@media only screen	and (min-width: 992px){
+		max-width: 50%;
+	}
+}

@@ -1,0 +1,46 @@
+html{
+	font-size: 100%;
+}
+
+//map
+$paleta: (
+	'uno': rgba(197, 110, 197, 0.603),
+	'dos': rgba(243, 7, 243, 0.685),
+	'tres': rgba(255, 199, 210, 0.7),
+	'efecto': #051149,);
+
+body{
+	font-family: $fontMain;
+}
+
+@mixin centrado($margin-left, $margin-right) {
+	margin-left: $margin-left;
+	margin-right: $margin-right;
+}
+
+@mixin alineado($align-items, $justify-content) {
+	align-items: $align-items;
+	justify-content: $justify-content;
+}
+
+@mixin transicion($background-color, $color, $transition ) {
+	background-color: $background-color;
+	color: $color;
+	transition: $transition;
+}
+
+@each $tamano in 45, 85{
+	.w-#{$tamano}{
+		width: percentage($tamano/100);
+	}
+}
+
+@each $rs in facebook, twitter, instagram{
+	.red-#{$rs}{
+		background-image: url(../img/#{$rs}.png);
+		width: 64px;
+		height: 64px;
+		background-size: 100%;
+		list-style: none;
+	}
+}

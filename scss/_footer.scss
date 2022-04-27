@@ -1,0 +1,19 @@
+.pie{
+	background-color: rgba(0, 0, 0, 0.9);
+	color: whitesmoke;
+}
+
+.tituloPie{
+	width: 100%;
+	background-color: darkgoldenrod;
+	text-align: center;
+}
+
+.alinear{
+	@include alineado(center, space-around)
+}
+
+.rotador:hover{
+	transform: rotateZ(360deg);
+	transition: transform 2s;
+}

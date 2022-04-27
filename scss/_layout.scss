@@ -1,0 +1,19 @@
+.diseno{
+	background-position: right;
+	overflow: auto;
+	font-family: $fontMain;
+	font-size: $textCuerpo;
+}
+
+@keyframes fondoAnimat{
+	0%{background-image: url(../img/bground.jpg);}
+	50%{background-image: url(../img/bground2.jpeg);}
+	100%{background-image: url(../img/bground.jpg);}
+}
+
+body{
+	animation-name: fondoAnimat;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}

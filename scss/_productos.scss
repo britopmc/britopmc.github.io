@@ -1,0 +1,27 @@
+ .decoraTablas{
+    background-color: white;
+    opacity: 100%;
+    text-align: center;
+    border: 5px;
+    width: 80%;
+    @include centrado(auto, auto);
+    thead{
+        tr{
+            th{
+                background-color: map-get($map:$paleta,$key:'tres');
+            }
+        }
+    }
+    tbody{
+        tr{
+            td:hover{
+                @include transicion(map-get($map:$paleta,$key:'efecto'), aliceblue, 0.5s);
+            }
+        }
+    }
+
+ }
+
+ .detalleProductos__sale{
+	text-decoration: line-through;
+}

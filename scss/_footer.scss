@@ -11,6 +11,7 @@
 
 .alinear{
 	@include alineado(center, space-around)
+	@include centrado(auto, auto);
 }
 
 .rotador:hover{

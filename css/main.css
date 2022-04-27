@@ -16,6 +16,9 @@ body {
 .w-85 {
   width: 85%; }
 
+.w-100 {
+  width: 100%; }
+
 .red-facebook {
   background-image: url(../img/facebook.png);
   width: 64px;
@@ -75,9 +78,9 @@ body {
           width: 50%; } }
     @media only screen and (min-width: 992px) {
       .encabezado nav a {
-        width: 70%; }
+        width: 50%; }
         .encabezado nav a img {
-          width: 50%; } }
+          width: 30%; } }
   .encabezado nav ul li {
     list-style: none; }
     .encabezado nav ul li a:hover {
@@ -198,8 +201,19 @@ iframe {
 
 .alinear {
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto; }
 
 .rotador:hover {
   transform: rotateZ(360deg);
   transition: transform 2s; }
+
+.pagError {
+  margin-top: 5rem; }
+  @media only screen and (min-width: 768px) {
+    .pagError {
+      margin-top: 2.5rem; } }
+  @media only screen and (min-width: 992px) {
+    .pagError {
+      margin-top: 0; } }

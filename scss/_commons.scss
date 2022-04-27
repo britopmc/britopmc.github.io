@@ -29,7 +29,7 @@ body{
 	transition: $transition;
 }
 
-@each $tamano in 45, 85{
+@each $tamano in 45, 85, 100{
 	.w-#{$tamano}{
 		width: percentage($tamano/100);
 	}
